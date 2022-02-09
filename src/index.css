@@ -7,10 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 添加新的字体时，需要将文件写到这里，src为相对路径 */
+/* 添加新的字体时，需要将文件写到这里，src为路径 */
 @font-face {
   font-family: 'LcdD';
-  src: url('./LcdD.ttf');
+  src: '%PUBLIC_URL%/LcdD.ttf';
 }
 
 code {
