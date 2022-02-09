@@ -13,8 +13,8 @@ const request = extend({
 /** 创建项目 POST,修改 PUT，删除 DELETE ，获取项目列表GET*/
 //获取列表GET
 export async function requestByProjectInfo(
-    params?,
-    options?
+    params,
+    options
 ) {
     return request('/project/list', {
         method: 'GET',
@@ -25,9 +25,9 @@ export async function requestByProjectInfo(
 
 //创建POST
 export async function requestByCreateProject(
-    body?,
-    params?,
-    options?
+    body,
+    params,
+    options
 ) {
     return request('/project', {
         method: 'POST',
@@ -39,9 +39,9 @@ export async function requestByCreateProject(
 
 //修改 PUT
 export async function requestByModifyProject(
-    body?,
-    params?,
-    options?
+    body,
+    params,
+    options
 ) {
     return request('/project', {
         method: 'PUT',
@@ -53,9 +53,9 @@ export async function requestByModifyProject(
 
 //删除 DELETE
 export async function requestByDeleteProject(
-    body?,
-    params?,
-    options?
+    body,
+    params,
+    options
 ) {
     return request('/project', {
         method: 'DELETE',
