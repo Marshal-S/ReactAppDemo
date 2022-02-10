@@ -13,8 +13,7 @@ function App() {
             <Routes>
                 {/* 默认进入页面 */}
                 <Route path="/" element={<HomeView />} /> 
-                <Route path="/main" >
-                    <Route path="home" element={<HomeView />} />
+                <Route path="/home" element={<HomeView />} >
                     <Route path="detail" element={<HomeDetailView />} />
                 </Route>
 

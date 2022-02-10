@@ -17,13 +17,13 @@ const MineView = () => {
             }}>
             <div style={{fontSize: 48, marginTop: 20}}>我是个人页的标题</div>
 
-            <Link to='/main/home'>通过Link跳转到home</Link>
+            <Link to='/home'>通过Link跳转到home</Link>
 
-            <Link to='/main/detail'>通过Link跳转到通用detail</Link>
+            <Link to='/home/detail'>通过Link跳转到通用detail</Link>
 
             <div 
                 onClick={() => {
-                    navigate('/main/home')
+                    navigate('/home')
                 }}
                 style={{
                     fontSize: 18, 

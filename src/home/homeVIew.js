@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {toggleFull} from 'be-full';
 import LeftView from './leftView';
 import RightView from './rightVIew';
+import { useNavigate } from 'react-router-dom';
 
 function HomeView() {
     const [isLoading, setIsLoading] = useState(true);
@@ -84,6 +85,8 @@ function HomeView() {
         status: 1,
     }]);
 
+    const navigate = useNavigate()
+
     //这个相当于 componentDidMount
     useEffect(() => {
         setTimeout(() => {
@@ -93,7 +96,7 @@ function HomeView() {
 
     //进入详情页
     const enterDetail = () => {
-        
+        navigate('/home/detial')
     }
 
     return (<div>{

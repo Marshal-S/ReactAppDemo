@@ -10,7 +10,7 @@ const RightView = (props) => {
 
     useEffect(() => {
         console.log('组件加载完毕了，在这里可以做组件自身内容')
-    })
+    }, [])
 
     //当 props发生改变是，更新内容
     useEffect(() => {
